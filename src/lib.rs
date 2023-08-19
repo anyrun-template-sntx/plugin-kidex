@@ -1,5 +1,6 @@
 use abi_stable::std_types::{ROption, RString, RVec};
-use anyrun_plugin::{anyrun_interface::HandleResult, *};
+use anyrun_interface::{HandleResult, Match, PluginInfo};
+use anyrun_macros::{get_matches, handler, info, init};
 use fuzzy_matcher::FuzzyMatcher;
 use kidex_common::IndexEntry;
 use serde::Deserialize;
